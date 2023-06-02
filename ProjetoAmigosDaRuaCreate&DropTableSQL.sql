@@ -9,31 +9,31 @@
 -----------------------------------------------
 
 -- Gerado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   em:        2023-06-02 18:22:59 BRT
+--   em:        2023-06-02 15:22:59 BRT
 --   site:      Oracle Database 12c
 --   tipo:      Oracle Database 12c
 
 
 
-DROP TABLE rm95199.tb_ar_evento CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_evento CASCADE CONSTRAINTS;
 
-DROP TABLE rm95199.tb_ar_local CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_local CASCADE CONSTRAINTS;
 
-DROP TABLE rm95199.tb_ar_parceria CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_parceria CASCADE CONSTRAINTS;
 
-DROP TABLE rm95199.tb_ar_patrocinador CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_patrocinador CASCADE CONSTRAINTS;
 
-DROP TABLE rm95199.tb_ar_pessoa_fisica CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_pessoa_fisica CASCADE CONSTRAINTS;
 
-DROP TABLE rm95199.tb_ar_pessoa_juridica CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_pessoa_juridica CASCADE CONSTRAINTS;
 
-DROP TABLE rm95199.tb_ar_responsavel CASCADE CONSTRAINTS;
+DROP TABLE tb_ar_responsavel CASCADE CONSTRAINTS;
 
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
 
 -- predefined type, no DDL - XMLTYPE
 
-CREATE TABLE rm95199.tb_ar_evento (
+CREATE TABLE tb_ar_evento (
     id_evento      NUMBER(19) NOT NULL,
     hora_fim       TIMESTAMP,
     hora_inicio    TIMESTAMP,
@@ -43,34 +43,34 @@ CREATE TABLE rm95199.tb_ar_evento (
     id_responsavel NUMBER(19)
 );
 
-ALTER TABLE rm95199.tb_ar_evento ADD CONSTRAINT tb_ar_evento_pk PRIMARY KEY ( id_evento );
+ALTER TABLE tb_ar_evento ADD CONSTRAINT tb_ar_evento_pk PRIMARY KEY ( id_evento );
 
-CREATE TABLE rm95199.tb_ar_local (
+CREATE TABLE tb_ar_local (
     id_local     NUMBER(19) NOT NULL,
     nr_latitude  NUMBER(11, 8),
     nr_longitude NUMBER(11, 8),
     nm_local     VARCHAR2(255 CHAR)
 );
 
-ALTER TABLE rm95199.tb_ar_local ADD CONSTRAINT tb_ar_local_pk PRIMARY KEY ( id_local );
+ALTER TABLE tb_ar_local ADD CONSTRAINT tb_ar_local_pk PRIMARY KEY ( id_local );
 
-CREATE TABLE rm95199.tb_ar_parceria (
+CREATE TABLE tb_ar_parceria (
     id_parceria     NUMBER(19) NOT NULL,
     id_evento       NUMBER(19),
     id_patrocinador NUMBER(19)
 );
 
-ALTER TABLE rm95199.tb_ar_parceria ADD CONSTRAINT tb_ar_parceria_pk PRIMARY KEY ( id_parceria );
+ALTER TABLE tb_ar_parceria ADD CONSTRAINT tb_ar_parceria_pk PRIMARY KEY ( id_parceria );
 
-CREATE TABLE rm95199.tb_ar_patrocinador (
+CREATE TABLE tb_ar_patrocinador (
     id_patrocinador NUMBER(19) NOT NULL,
     nm_patrocinador VARCHAR2(255 CHAR),
     tp_patrocinador NUMBER(5)
 );
 
-ALTER TABLE rm95199.tb_ar_patrocinador ADD CONSTRAINT tb_ar_patrocinador_pk PRIMARY KEY ( id_patrocinador );
+ALTER TABLE tb_ar_patrocinador ADD CONSTRAINT tb_ar_patrocinador_pk PRIMARY KEY ( id_patrocinador );
 
-CREATE TABLE rm95199.tb_ar_pessoa_fisica (
+CREATE TABLE tb_ar_pessoa_fisica (
     id_pessoa_fisica NUMBER(19) NOT NULL,
     nr_cpf           NUMBER(11),
     dt_nascimento    DATE,
@@ -78,9 +78,9 @@ CREATE TABLE rm95199.tb_ar_pessoa_fisica (
     id_responsavel   NUMBER(19)
 );
 
-ALTER TABLE rm95199.tb_ar_pessoa_fisica ADD CONSTRAINT tb_ar_pessoa_fisica_pk PRIMARY KEY ( id_pessoa_fisica );
+ALTER TABLE tb_ar_pessoa_fisica ADD CONSTRAINT tb_ar_pessoa_fisica_pk PRIMARY KEY ( id_pessoa_fisica );
 
-CREATE TABLE rm95199.tb_ar_pessoa_juridica (
+CREATE TABLE tb_ar_pessoa_juridica (
     id_pessoa_juridica NUMBER(19) NOT NULL,
     nr_cnpj            NUMBER(14),
     nr_insc_estadual   NUMBER(14),
@@ -89,9 +89,9 @@ CREATE TABLE rm95199.tb_ar_pessoa_juridica (
     id_responsavel     NUMBER(19)
 );
 
-ALTER TABLE rm95199.tb_ar_pessoa_juridica ADD CONSTRAINT tb_ar_pessoa_juridica_pk PRIMARY KEY ( id_pessoa_juridica );
+ALTER TABLE tb_ar_pessoa_juridica ADD CONSTRAINT tb_ar_pessoa_juridica_pk PRIMARY KEY ( id_pessoa_juridica );
 
-CREATE TABLE rm95199.tb_ar_responsavel (
+CREATE TABLE tb_ar_responsavel (
     id_responsavel NUMBER(19) NOT NULL,
     ds_email       VARCHAR2(255 CHAR),
     nm_responsavel VARCHAR2(255 CHAR),
@@ -99,38 +99,38 @@ CREATE TABLE rm95199.tb_ar_responsavel (
     nr_telefone    NUMBER(14)
 );
 
-CREATE UNIQUE INDEX rm95199.uk_ds_email ON
-    rm95199.tb_ar_responsavel (
+CREATE UNIQUE INDEX uk_ds_email ON
+    tb_ar_responsavel (
         ds_email
     ASC );
 
-ALTER TABLE rm95199.tb_ar_responsavel ADD CONSTRAINT tb_ar_responsavel_pk PRIMARY KEY ( id_responsavel );
+ALTER TABLE tb_ar_responsavel ADD CONSTRAINT tb_ar_responsavel_pk PRIMARY KEY ( id_responsavel );
 
-ALTER TABLE rm95199.tb_ar_responsavel ADD CONSTRAINT uk_ds_email UNIQUE ( ds_email );
+ALTER TABLE tb_ar_responsavel ADD CONSTRAINT uk_ds_email UNIQUE ( ds_email );
 
-ALTER TABLE rm95199.tb_ar_parceria
+ALTER TABLE tb_ar_parceria
     ADD CONSTRAINT fk_evento_parceria FOREIGN KEY ( id_evento )
-        REFERENCES rm95199.tb_ar_evento ( id_evento );
+        REFERENCES tb_ar_evento ( id_evento );
 
-ALTER TABLE rm95199.tb_ar_evento
+ALTER TABLE tb_ar_evento
     ADD CONSTRAINT fk_local_evento FOREIGN KEY ( id_local )
-        REFERENCES rm95199.tb_ar_local ( id_local );
+        REFERENCES tb_ar_local ( id_local );
 
-ALTER TABLE rm95199.tb_ar_parceria
+ALTER TABLE tb_ar_parceria
     ADD CONSTRAINT fk_patrocinador_parceria FOREIGN KEY ( id_patrocinador )
-        REFERENCES rm95199.tb_ar_patrocinador ( id_patrocinador );
+        REFERENCES tb_ar_patrocinador ( id_patrocinador );
 
-ALTER TABLE rm95199.tb_ar_evento
+ALTER TABLE tb_ar_evento
     ADD CONSTRAINT fk_responsavel_evento FOREIGN KEY ( id_responsavel )
-        REFERENCES rm95199.tb_ar_responsavel ( id_responsavel );
+        REFERENCES tb_ar_responsavel ( id_responsavel );
 
-ALTER TABLE rm95199.tb_ar_pessoa_fisica
+ALTER TABLE tb_ar_pessoa_fisica
     ADD CONSTRAINT fk_responsavel_fisica FOREIGN KEY ( id_responsavel )
-        REFERENCES rm95199.tb_ar_responsavel ( id_responsavel );
+        REFERENCES tb_ar_responsavel ( id_responsavel );
 
-ALTER TABLE rm95199.tb_ar_pessoa_juridica
+ALTER TABLE tb_ar_pessoa_juridica
     ADD CONSTRAINT fk_responsavel_juridica FOREIGN KEY ( id_responsavel )
-        REFERENCES rm95199.tb_ar_responsavel ( id_responsavel );
+        REFERENCES tb_ar_responsavel ( id_responsavel );
 
 
 
