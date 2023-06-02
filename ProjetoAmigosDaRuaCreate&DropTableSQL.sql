@@ -9,7 +9,7 @@
 -----------------------------------------------
 
 -- Gerado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   em:        2023-06-02 15:22:59 BRT
+--   em:        2023-06-02 18:22:59 BRT
 --   site:      Oracle Database 12c
 --   tipo:      Oracle Database 12c
 
