@@ -11,16 +11,16 @@
 ----PESQUISA PARA SABER QUAIS OS NOMES DOS USUÁRIOS QUE USARAM DETERMINADO PATROCINADOR EM UM EVENTO----------
 ---NO EXEMPLO 'Dove'------------------------------------------------------------------------------------------ 
 DECLARE
-  v_nm_responsavel rm95199.tb_ar_responsavel.nm_responsavel%TYPE;
-  v_nm_patrocinador rm95199.tb_ar_patrocinador.nm_patrocinador%TYPE := 'Dove';
+  v_nm_responsavel tb_ar_responsavel.nm_responsavel%TYPE;
+  v_nm_patrocinador tb_ar_patrocinador.nm_patrocinador%TYPE := 'Dove';
   v_patrocinador_encontrado BOOLEAN := FALSE;
 
   CURSOR c_evento_patrocinador IS
     SELECT r.nm_responsavel
-    FROM rm95199.tb_ar_evento e
-    JOIN rm95199.tb_ar_responsavel r ON e.id_responsavel = r.id_responsavel
-    JOIN rm95199.tb_ar_parceria p ON e.id_evento = p.id_evento
-    JOIN rm95199.tb_ar_patrocinador pt ON p.id_patrocinador = pt.id_patrocinador
+    FROM tb_ar_evento e
+    JOIN tb_ar_responsavel r ON e.id_responsavel = r.id_responsavel
+    JOIN tb_ar_parceria p ON e.id_evento = p.id_evento
+    JOIN tb_ar_patrocinador pt ON p.id_patrocinador = pt.id_patrocinador
     WHERE pt.nm_patrocinador = v_nm_patrocinador;
 
 BEGIN
