@@ -10,7 +10,8 @@
 #### João Victor Oliveira Da Silva - RM: 94231
 ### PROFESSOR:
 #### MILTON GOYA
-
+---
+--- Projeto Amigos Da Rua ---
 ### MODELO LÓGICO
 ![image](https://github.com/emersonnfs/GlobalSolutionDataBase/assets/101301360/c206b3f6-2f3e-4269-851e-24ef07346044)
 
