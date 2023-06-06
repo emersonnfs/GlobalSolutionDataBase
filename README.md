@@ -1,8 +1,6 @@
 # GLOBAL SOLUTION FIAP 
 # (DATABASE APPLICATION DEVELOPMENT)
 
-## PROJETO AMIGOS DA RUA
-
 ### PARTICIPANTES:
 #### Abner Rodrigues Ferreira - RM: 93576
 #### Davi Oliveira Da Silva - RM: 95535
