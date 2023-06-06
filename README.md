@@ -21,6 +21,7 @@ Uma das principais funcionalidades do nosso aplicativo será a inclusão de filt
 Acreditamos que essa abordagem inovadora e prática trará um impacto significativo para as comunidades afetadas pela fome. Com o auxílio do nosso aplicativo, os indivíduos em situação de vulnerabilidade poderão ter acesso mais fácil a recursos vitais, como alimentos, água e assistência alimentar. Além disso, a parceria com organizações engajadas nessa luta permitirá o engajamento direto da comunidade e a colaboração de diferentes setores da sociedade.
 
 Estamos confiantes de que, por meio desse aplicativo revolucionário, poderemos enfrentar a crise de fome global de forma mais efetiva e oferecer esperança e suporte para aqueles que mais precisam. Com o apoio de nossos parceiros e usuários engajados, esperamos fazer uma diferença significativa na vida daqueles que lutam diariamente contra a fome e a escassez de recursos básicos.
+
 ---
 ### MODELO LÓGICO
 ![image](https://github.com/emersonnfs/GlobalSolutionDataBase/assets/101301360/c206b3f6-2f3e-4269-851e-24ef07346044)
