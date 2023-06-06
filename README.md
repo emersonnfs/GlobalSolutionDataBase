@@ -39,7 +39,7 @@
  ![image](https://github.com/emersonnfs/GlobalSolutionDataBase/assets/101301360/15c210dc-102e-4da1-a762-40cb2def5021)
 
 ### PESQUISA PARA SABER QUAIS OS NOMES DOS RESPONSÁVEIS, QUE UTILIZARAM O PATROCINADOR EM UM EVENTO (NO EXEMPLO FOI A EMPRESA ‘Dove’ ) 
-![image](https://github.com/emersonnfs/GlobalSolutionDataBase/assets/101301360/ff68655a-e938-4408-bf90-99e663c8c57d)
+![image](https://github.com/emersonnfs/GlobalSolutionDataBase/assets/101301360/dbc3fa54-4983-46b0-8839-688b8b03f1f2)
 
 ### PESQUISA PARA SABER OS DADOS DOS EVENTOS, LOCAIS, PARCERIAS, PATROCINADORES E RESPONSÁVEIS EM QUE DETERMINADA EMPRESA OS PATROCINOU (NO EXEMPLO A EMPRESA ‘Casas Bahia’)
 ![image](https://github.com/emersonnfs/GlobalSolutionDataBase/assets/101301360/9b627110-8c45-4505-8894-466ad90e75b1)
