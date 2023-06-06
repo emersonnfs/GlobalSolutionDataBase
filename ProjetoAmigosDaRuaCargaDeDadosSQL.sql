@@ -43,6 +43,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);       
   END;
 
   -- INSERT 2
@@ -57,6 +64,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -77,6 +91,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 4
@@ -91,6 +112,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -111,6 +139,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 6
@@ -125,6 +160,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -145,6 +187,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 8
@@ -159,6 +208,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -179,6 +235,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 10
@@ -193,6 +256,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -234,6 +304,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 2
@@ -247,6 +324,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -266,6 +350,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;  
 
   -- Inserção 4
@@ -282,6 +373,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 5
@@ -295,6 +393,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -335,6 +440,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 2
@@ -348,6 +460,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -367,6 +486,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 4
@@ -383,6 +509,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- Inserção 5
@@ -396,6 +529,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -436,6 +576,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 2
@@ -449,6 +596,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -468,6 +622,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 4
@@ -484,6 +645,13 @@ BEGIN
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- Inserção 5
@@ -497,6 +665,13 @@ BEGIN
     WHEN DUP_VAL_ON_INDEX THEN
       v_codigo_erro := SQLCODE;
       v_mensagem_erro := 'Erro: Chave primária duplicada.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
       
       INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
@@ -535,6 +710,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 2
@@ -548,6 +730,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 3
@@ -561,6 +750,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 4
@@ -574,6 +770,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 5
@@ -587,6 +790,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   COMMIT;
@@ -621,6 +831,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 2
@@ -634,6 +851,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 3
@@ -647,6 +871,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 4
@@ -660,6 +891,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 5
@@ -673,6 +911,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   COMMIT;
@@ -706,6 +951,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 2
@@ -718,6 +970,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 3
@@ -730,6 +989,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 4
@@ -742,6 +1008,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 5
@@ -754,6 +1027,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 6
@@ -766,6 +1046,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 7
@@ -778,6 +1065,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
 
   -- INSERT 8
@@ -790,6 +1084,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 9
@@ -802,6 +1103,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   -- INSERT 10
@@ -814,6 +1122,13 @@ BEGIN
       v_mensagem_erro := SQLERRM;
       INSERT INTO tabela_de_logs (id_log, nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
       VALUES (NULL, v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
+      
+    WHEN VALUE_ERROR THEN
+      v_codigo_erro := SQLCODE;
+      v_mensagem_erro := 'Erro: Valor inválido.';
+      
+      INSERT INTO tabela_de_logs (nome_usuario, data_ocorrencia, codigo_erro, mensagem_erro)
+      VALUES (v_nome_usuario, v_data_ocorrencia, v_codigo_erro, v_mensagem_erro);
   END;
   
   COMMIT;
